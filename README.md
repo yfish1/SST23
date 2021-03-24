@@ -63,8 +63,9 @@ Source : Attack scenario from “https://apwt.gitbook.io/software-security/injec
  
 ## CSRF 
 
-CSRF is a cyber attack method that stands for Cross Site Request Forgery. This method tricks the user into submitting a POST request into a different website that they think they are using. I think an example makes for a better explanation.  
-Imagine if you visited a website(A) and you log in. The website returns you a cookie and everything you want. After visiting website(A) you return to website(B), a malicious website. This website takes your data from your cookie and uses that logged in session from your cookie to execute al sorts of malicious requests such as change your password. 
+CSRF is a cyber attack method that stands for Cross Site Request Forgery. This method tricks the user into submitting a POST request into a different website that they think they are using. 
+For instance:
+  Imagine if you visited a website(A) and you log in. The website returns you a cookie and everything     you want. After visiting website(A) you return to website(B), a malicious website. This website takes your data from your cookie and uses that logged in session from your cookie to execute all sorts of malicious requests such as change your password. 
 
 Usually this is fixed by storing a random string of characters and keeping that as a token. The malicious website cannot use the cookie now because the token safeguards the cookie contents. 
 
