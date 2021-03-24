@@ -69,20 +69,20 @@ Imagine if you visited a website(A) and you log in. The website returns you a co
 
 Usually this is fixed by storing a random string of characters and keeping that as a token. The malicious website cannot use the cookie now because the token safeguards the cookie contents. 
 
-We have set up a XSRF token in both the cookie header and body, so we are moderately protected against CSRF attacks. The logical side is that we don’t have authentication right now so there wouldn’t even be any point in executing a CSRF attack right now since anyone can make PUT/POST/DELETE requests. 
+We have set up a XSRF token in both the cookie header and body, so we are moderately protected against CSRF attacks. The logical side is that we do not have authentication right now so there wouldn’t even be any point in executing a CSRF attack right now since anyone can make PUT/POST/DELETE requests. Below u can find an image that show the validation of Anti-Forgery Token for the DELETE action. PUT and POST both have this token as well.
 
  ```c#
- // POST: Movies/Delete/5
- [HttpPost, ActionName("Delete")]
- [ValidateAntiForgeryToken]
- public async Task<IActionResult> DeleteConfirmed(int id)
- {
-    var movie = await _context.Movie.FindAsync(id);
-    _context.Movie.Remove(movie);
-    await _context.SaveChangesAsync();
-    return RedirectToAction(nameof(Index));
- }
-```
+       // POST: Movies/Delete/5
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            var movie = await _context.Movie.FindAsync(id);
+            _context.Movie.Remove(movie);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+  ```
 
 ## SQLi 
 
