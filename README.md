@@ -16,7 +16,7 @@ HTTPS is an extension of this protocol. It uses SSL(Secure Socket Layer) to prov
 
 All the domains on the Azure portals are HTTPS encrypted, meaning that we also have HTTPS on our website. This makes sure that all our data - both incoming and outgoing - is encrypted. 
 
-![alt text](https://github.com/yfish1/SST23/blob/master/ASite.png?raw=true)
+![certificate](https://github.com/yfish1/SST23/blob/master/ASite.png?raw=true)
 
 ## Cross-Site Scripting (XSS) 
 
