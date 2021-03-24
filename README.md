@@ -62,21 +62,6 @@ The following is a step-by-step description of a stored XSS attack:
 Source : Attack scenario from “https://apwt.gitbook.io/software-security/injection-attacks/000introxss” 
 
  
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
 ## CSRF 
 
 CSRF is a cyber attack method that stands for Cross Site Request Forgery. This method tricks the user into submitting a POST request into a different website that they think they are using. I think an example makes for a better explanation.  
@@ -86,7 +71,18 @@ Usually this is fixed by storing a random string of characters and keeping that 
 
 We have set up a XSRF token in both the cookie header and body, so we are moderately protected against CSRF attacks. The logical side is that we don’t have authentication right now so there wouldn’t even be any point in executing a CSRF attack right now since anyone can make PUT/POST/DELETE requests. 
 
- 
+ ```c#
+       // POST: Movies/Delete/5
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            var movie = await _context.Movie.FindAsync(id);
+            _context.Movie.Remove(movie);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+  ```
 
 ## SQLi 
 
