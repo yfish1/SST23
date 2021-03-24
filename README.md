@@ -20,9 +20,9 @@ Cross-Site Scripting (XSS) attacks are a type of injection attack, where an atta
 These scripts can change the content of the DOM(Document Object Model), steal cookies/tokens and force users to do unwanted requests. 
 XSS consists of 3 Different types :  
 
-    - Stored XSS 
-    - Reflected XSS 
-    - DOM-based XSS 
+    Stored XSS 
+    Reflected XSS 
+    DOM-based XSS 
 
 ### Stored XSS (Type I) 
 
