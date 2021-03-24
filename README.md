@@ -16,6 +16,7 @@ HTTPS is an extension of this protocol. It uses SSL(Secure Socket Layer) to prov
 
 All the domains on the Azure portals are HTTPS encrypted, meaning that we also have HTTPS on our website. This makes sure that all our data - both incoming and outgoing - is encrypted. 
 
+![GitHub Logo](C:\Users\kasmi\OneDrive\Documenten\GitHub\SST23)
 
 ## Cross-Site Scripting (XSS) 
 
@@ -94,4 +95,29 @@ SQLi stands for SQL injection, the attacker injects a SQL query via the input da
 
  
 
-We make use of parameters in our project, this way the data can’t be manipulated with a SQL injection.  
+We make use of parameters in our project, this way the data can’t be manipulated with a SQL injection. 
+
+# Break it
+
+After our evaluation, we introduced two vulnerabilities (CSRF and XSS). With the [NAME OF SAST-TOOL], we can verify that it finds the vulnerabilities that we have introduced.
+
+
+## CSRF Vulnerability
+
+We can create a simple CSRF vulnerability by removing all the code that creates a forgery token and the code that validates a forgery token. Not using a token for your cookies makes you vulnerable against CSRF. The authentication on our website would store a cookie which the attacker can now use to his advantage. Of course, the user would still have to be lured to the malicious site first. 
+
+
+## HTTPS Vulnerability
+
+We tried to disable HTTPS and make our website not use an SSL however this is something that is configured centrally within azure. At most you can disable redirection to HTTPS and lower your TLS version but further than that Azure forces you to at least use HTTPS. In other cloud services this is also the case, AWS does also not compromise on this. 
+
+
+## XSS
+
+Geprobeerd maar geen cookies/token (uitbreiden tekst) 
+
+
+## SQLi
+
+NOG TE DOEN
+
