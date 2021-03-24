@@ -24,9 +24,6 @@ XSS consists of 3 Different types :
 - Reflected XSS
 - DOM-based XSS
 
-    Stored XSS 
-    Reflected XSS 
-    DOM-based XSS 
 
 ### Stored XSS (Type I) 
 
