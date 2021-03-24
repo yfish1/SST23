@@ -31,7 +31,7 @@ XSS consists of 3 Different types :
 
 ### Stored XSS (Type I) 
 
-Stored XSS generally results to many victims being attacked. Stored XSS requires a vulnerable application that stores data into a database where data is stored and sent back to the users. This could be something like an online web form, blog, … 
+Stored XSS generally results to many victims being attacked. Stored XSS requires a vulnerable application that stores data into a database where data is sent back to the users. This could be something like an online web form, blog, … 
 
 The attacker sends htm/JavaScript to the application instead of normal input, this is then stored into the database and waits there. Later when the victim visits the same website, they then download this html/JavaScript. So by using the web application as a starting point, an attacker is able to attack any user. The reason why this occurs is because there is no validation for the input coming from the application going. Another reason is because there aren’t any good sanitization controls for the output coming out from of the application. 
 
