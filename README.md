@@ -18,12 +18,7 @@ All the domains on the Azure portals are HTTPS encrypted, meaning that we also h
 Cross-Site Scripting (XSS) attacks are a type of injection attack, where an attacker tries to inject maliscious scripts(javascript/HTML) into a webapp. Because it runs on the same origin as the trusted application, the malicious script can access cookies, session tokens, ….  
 
 These scripts can change the content of the DOM(Document Object Model), steal cookies/tokens and force users to do unwanted requests. 
-
 XSS consists of 3 Different types :  
-
-- Stored XSS
-- Reflected XSS
-- Dom-based XSS
 
     - Stored XSS 
     - Reflected XSS 
