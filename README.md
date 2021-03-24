@@ -21,9 +21,9 @@ These scripts can change the content of the DOM(Document Object Model), steal co
 
 XSS consists of 3 Different types :  
 
-    *Stored XSS 
-    *Reflected XSS 
-    *DOM-based XSS 
+    * Stored XSS 
+    * Reflected XSS 
+    * DOM-based XSS 
 
 ### Stored XSS (Type I) 
 
