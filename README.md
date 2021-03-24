@@ -37,6 +37,8 @@ The attacker sends htm/JavaScript to the application instead of normal input, th
 
 Reflected XSS can occur when a user sends something to an application and the application reflects the data right back to the same user. This means that if the users sends in some javascrip/HTML, the same script/HTML will be sent back to the same user. The problem is when for example a user tries to log in and types in the password incorrectly and he/she gets an error messages.  When the error messages that was sent back contained for example the user his/her name, someone with bad intentions can send out a phishing email to the user with a malicious string. When the user is tricked and opens the URL, the malicious string is included in the response to user. The sensitive data then gets send to the attacker and the attacker gains full access to the user his/her account. 
 
+![alt text](https://gblobscdn.gitbook.com/assets%2F-M-ZWft_B1sfuGrGj7RW%2Fsync%2Fd09ebf15bc8731335dca54e085b1dfd135f82824.png?alt=media)
+
 ### DOM-based XSS (Type 0) 
 
 DOM-based XSS is verry similar to reflected XSS, the only difference is that the malicious injection happens in the browser(DOM) without involving the server.  
