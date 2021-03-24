@@ -5,6 +5,10 @@ Throughout the classes of software security & testing we learned many different 
 In this document we will discuss the different methods and see how resistant our website is against these methods. After doing an analysis we will try to introduce vulnerabilities to these attacks on our website.  
 
 # Make It
+
+In this section we wil talk about the different types of attacks, what they are, how they work and how we implement it in our website.
+
+
 ## HTTPS 
 
 HTTP is a protocol that is used to transmit data between a client and a server. The client requests data from the server and waits for a response from the server. HTTP is stateless meaning that there is no way of telling how requests are linked with one another. Usually this is fixed with cookies. 
