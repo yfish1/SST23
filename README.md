@@ -72,17 +72,17 @@ Usually this is fixed by storing a random string of characters and keeping that 
 We have set up a XSRF token in both the cookie header and body, so we are moderately protected against CSRF attacks. The logical side is that we don’t have authentication right now so there wouldn’t even be any point in executing a CSRF attack right now since anyone can make PUT/POST/DELETE requests. 
 
  ```c#
-       // POST: Movies/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
-        {
-            var movie = await _context.Movie.FindAsync(id);
-            _context.Movie.Remove(movie);
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
-        }
-  ```
+ // POST: Movies/Delete/5
+ [HttpPost, ActionName("Delete")]
+ [ValidateAntiForgeryToken]
+ public async Task<IActionResult> DeleteConfirmed(int id)
+ {
+    var movie = await _context.Movie.FindAsync(id);
+    _context.Movie.Remove(movie);
+    await _context.SaveChangesAsync();
+    return RedirectToAction(nameof(Index));
+ }
+```
 
 ## SQLi 
 
