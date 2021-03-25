@@ -108,7 +108,7 @@ After our evaluation, we introduced two vulnerabilities (CSRF and XSS). With the
 
 We can create a simple CSRF vulnerability by removing all the code that creates a forgery token and the code that validates a forgery token. Not using a token for your cookies makes you vulnerable against CSRF. The authentication on our website would store a cookie which the attacker can now use to his advantage. Of course, the user would still have to be lured to the malicious site first. 
 
-We took the ```[ValidateAntiForgeryToken] ``` out to make the webapp vulnerable to CSRF.
+We took the ```[ValidateAntiForgeryToken]``` out to make the webapp vulnerable to CSRF.
 (Verify with tool (SAST))
 
 ## HTTPS Vulnerability
