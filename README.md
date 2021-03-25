@@ -121,6 +121,7 @@ To verify that our project is vulerable to CSRF we used our tool. Once we publis
 
 However if you replace  ```[ValidateAntiForgeryToken]``` with ```[IgnoreAntiforgeryToken]```  the tool returns no warning.
 
+(second tool veriefd it also !)
 
 ## HTTPS Vulnerability
 
@@ -140,3 +141,5 @@ NOG TE DOEN
 
 # Journey
 (WRITE PROBLEMS/PROGRESS/CHOICE OF TOOL/... HERE)
+
+OWASP ZAP TOOL DELETED EVERYTHING
