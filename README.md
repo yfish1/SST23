@@ -81,13 +81,12 @@ We have set up a XSRF token in both the cookie header and body, so we are modera
 SQLi stands for SQL injection, as the name says it, it injects an unwanted SQL command into your web app. When you have any sort of input that makes a request to your SQL database, your database will return whatever the request asks for. Using this input the user can manipulate this by sending a malicious request to your SQL-database by for example making a query to get a password that is stored in that database.  
 You can **defend against SQLi** with these **4** methods: 
 
-   * Use parametrized queries
-   * Use stored procedures (but does not guarantee protection)
-   * Whitelist input validation (but does not guarantee protection)
-   * Escape user input (but does not guarantee protection) 
+    * Using prepared statements 
+    * Using Stored Procedures 
+    * Using Allow-list Input Validation. 
+    * Escaping all user input 
 
-.NET Core is moderately defended against an SQL injection attack because it escapes all user input in the search field. This user input also isn’t used.   
-
+.NET Core is moderately defended against an SQL injection attack because the framework .NET core 5 has some defense against SQL-injections. We cannot use the input fields to directly communicate with the database. It would be an architectural challenge to introduce a vulnerability into our webapp.
 
 
 # Break it
