@@ -136,3 +136,7 @@ Geprobeerd maar geen cookies/token (uitbreiden tekst)
 
 NOG TE DOEN
 (moet niet tenzij XSS niet werkt)
+
+
+# Journey
+(WRITE PROBLEMS/PROGRESS/CHOICE OF TOOL/... HERE)
