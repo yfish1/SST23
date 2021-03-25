@@ -47,15 +47,6 @@ Reflected XSS can occur when a user sends data to an application and the applica
 
 DOM-based XSS is very similar to reflected XSS, the only difference is that the malicious injection happens in the browser (DOM) without involving the server. If the attack were successful, the page could possibly be changed. 
 
-#### Attack scenario  
-
-The following is a step-by-step description of a stored XSS attack: 
-
-   * Attacker injects script in an otherwise benevolent application; 
-   * Victim visits the benevolent application; 
-   * The attacker's script is sent to the victim's browser; 
-   * The attacker's script is executed in the victim's browser. 
-
 [source](https://apwt.gitbook.io/software-security/injection-attacks/000introxss)
 
  
