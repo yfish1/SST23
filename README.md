@@ -104,11 +104,11 @@ We make use of parameters in our project, this way the data can’t be manipulat
 After our evaluation, we introduced two vulnerabilities (CSRF and XSS). With the [NAME OF SAST-TOOL], we can verify that it finds the vulnerabilities that we have introduced.
 
 
-## [Tool](https://security-code-scan.github.io/#Installation) Security Code Scan
+## Tool Security Code Scan
 
 Security Code Scan is an open source tool. It detects various security vulnerability patterns. There  are **3** methods to get this tool.
 
-More info about this methods on https://security-code-scan.github.io/#Installation
+More info about this methods and tool on [the site]https://security-code-scan.github.io/#Installation
 
 
 ## CSRF Vulnerability
