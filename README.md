@@ -104,12 +104,22 @@ We make use of parameters in our project, this way the data can’t be manipulat
 After our evaluation, we introduced two vulnerabilities (CSRF and XSS). With the [NAME OF SAST-TOOL], we can verify that it finds the vulnerabilities that we have introduced.
 
 
+## Tool Security Code Scan
+
+Security Code Scan is an open source tool. It detects various security vulnerability patterns. There  are **3** methods to get this tool.
+
+More info about this methods on https://security-code-scan.github.io/#Installation
+
+
 ## CSRF Vulnerability
 
 We can create a simple CSRF vulnerability by removing all the code that creates a forgery token and the code that validates a forgery token. Not using a token for your cookies makes you vulnerable against CSRF. The authentication on our website would store a cookie which the attacker can now use to his advantage. Of course, the user would still have to be lured to the malicious site first. 
 
 We took the ```[ValidateAntiForgeryToken]``` out to make the webapp vulnerable to CSRF.
-(Verify with tool (SAST))
+
+To verify that our project is vulerable to CSRF we used our tool. Once we published the project, the tool immediately warns about potential vulnerabilities, as seen in the picture below.
+
+
 
 ## HTTPS Vulnerability
 
