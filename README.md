@@ -151,8 +151,8 @@ We have tried a few things for this subject matter:
 
 The first thing we’ve tried to do was entering script/html tags in the input fields to see if the database would carry out the commands. We had no success trying this, the code was saved in the database as a string and was not executed. We tried to delete the regex that was provided by the tutorial but also this didn’t help.
 
-![alt text](https://github.com/yfish1/SST23/blob/main/CSRFValidate.PNG)
-![alt text](https://github.com/yfish1/SST23/blob/main/CSRFValidate.PNG)
+![alt text](https://github.com/yfish1/SST23/blob/main/CodeRegex.png)
+![alt text](https://github.com/yfish1/SST23/blob/main/FrontPage.PNG)
 
 
 ## SQLi
