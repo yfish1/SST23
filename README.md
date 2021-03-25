@@ -106,7 +106,7 @@ More info about the tool on [the site](https://security-code-scan.github.io/#Ins
 
 ### OWASP ZAP
 
-OWASP ZAP is a tool outside of Visual Studio, it was an easy to install and setup with their awesome guide. The tool itself is somehow 'scary', when u put the link of our site, the tool is going to try and break the site. The user interface is easy to understand even with no IT-knowledge.
+OWASP ZAP is a tool outside of Visual Studio, it was an easy to install and setup with their [awesome guide](https://www.zaproxy.org/getting-started/). The tool itself is somehow 'scary', when u put the link of our site, the tool is going to try and break the site. The user interface is easy to understand even with no IT-knowledge.
 
 
 ### NoScript Extension
