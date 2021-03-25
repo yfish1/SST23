@@ -151,7 +151,36 @@ We have tried a few things for this subject matter:
 
 The first thing we’ve tried to do was entering script/html tags in the input fields to see if the database would carry out the commands. We had no success trying this, the code was saved in the database as a string and was not executed. We tried to delete the regex that was provided by the tutorial but also this didn’t help.
 
-![alt text](https://github.com/yfish1/SST23/blob/main/CodeRegex1.png)
+```c#
+       public class Movie
+       {
+        public int Id { get; set; }
+
+        //[StringLength(60, MinimumLength = 3)]
+        [Required]
+        public string Title { get; set; }
+
+        [Display(Name = "Release Date")]
+        [DataType(DataType.Date)]
+        public DateTime ReleaseDate { get; set; }
+
+        //[Range(1, 100)]
+        //[DataType(DataType.Currency)]
+        //[Column(TypeName = "decimal(18, 2)")]
+        public decimal Price { get; set; }
+
+        //[RegularExpression(@"^[A-Z]+[a-zA-Z ]*$")]
+        //@"^[a-zA-Z ]*$" 
+        [Required]
+        //[StringLength(30)]
+        public string Genre { get; set; }
+
+        //[RegularExpression(@"^[A-Z]+[a-zA-Z0-9""'\s-]*$")]
+        //[StringLength(5)]
+        [Required]
+        public string Rating { get; set; }
+        }
+  ```
 ![alt text](https://github.com/yfish1/SST23/blob/main/FrontPage.PNG)
 
 
