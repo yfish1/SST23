@@ -43,7 +43,7 @@ Reflected XSS can occur when a user sends data to an application and the applica
 
 <img src="https://gblobscdn.gitbook.com/assets%2F-M-ZWft_B1sfuGrGj7RW%2Fsync%2Fd09ebf15bc8731335dca54e085b1dfd135f82824.png?alt=media" data-canonical-src="https://gblobscdn.gitbook.com/assets%2F-M-ZWft_B1sfuGrGj7RW%2Fsync%2Fd09ebf15bc8731335dca54e085b1dfd135f82824.png?alt=media" width="668" height="376" />
 
-### DOM-based XSS (Type 0) 
+### DOM-based XSS (Type III) 
 
 DOM-based XSS is very similar to reflected XSS, the only difference is that the malicious injection happens in the browser (DOM) without involving the server. If the attack were successful, the page could possibly be changed. 
 
