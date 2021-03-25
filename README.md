@@ -142,6 +142,17 @@ NOG TE DOEN
 
 
 # Journey
+
+We first started with following a tutorial to setup the project. The setup went well and started up (locally) without problems. However, there were still some bugs, for example you couldn’t give a decimal number in the price column, we fixed this bug by alternating the regex. After fixing some minor bugs, we tried to host our project. This part took a lot of time of our hand. We tried to use AWS since this method was introduced in one of our classes, but we quickly realized that it was way too complicated, so we went further with Netlify but this was a fail too. After those 2 methods we chose for azure, a quite simple method, we thought. First we had to setup the azure account, to do this we had to verify our account as student. When we succeeded, we had to buy the license for azure with the 100 dollars we were given. After this we made a resource group and published our project. Unfortunately it failed, we got an error.  
+
+![alt text](https://github.com/yfish1/SST23/blob/main/firsterror.png)
+ 
+
+We fixed this error by adding the “ASPNETCORE_ENVIRONMENT” and set the value to it to “Development”. Yet we still got errors after it, the second error was that the connectionString was wrong and we didn’t migrate it to the database. After we managed to clear the error by adding data manually to the local storage, we stumbled upon another error. This one was about the database, we didn’t connect with the azure database although we made it. After connecting the azure database everything worked. So we started to test if and how the project protects against the attacks named above. CSRF went fluently together with HTTPS, however we struggled with XSS and SQLi.  
+
+ 
+
+(XSS process uitleggen/ SQLi (nog ni echt iets gedaan)) 
 (WRITE PROBLEMS/PROGRESS/CHOICE OF TOOL/... HERE)
 
 OWASP ZAP TOOL DELETED EVERYTHING
