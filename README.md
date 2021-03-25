@@ -90,8 +90,12 @@ We have set up a XSRF token in both the cookie header and body, so we are modera
  
 
 SQLi stands for SQL injection, the attacker injects a SQL query via the input data from the client to the application. With this method, the attacker can read and modify(Insert/Update/Delete) data from the database. 
+To **prevent SQL injection** you have to:
 
- 
+   * Use parametrized queries
+   * Use stored procedures (but does not guarantee protection)
+   * Whitelist input validation (but does not guarantee protection)
+   * Escape user input (but does not guarantee protection) 
 
 We make use of parameters in our project, this way the data can’t be manipulated with a SQL injection. 
 
@@ -104,6 +108,7 @@ After our evaluation, we introduced two vulnerabilities (CSRF and XSS). With the
 
 We can create a simple CSRF vulnerability by removing all the code that creates a forgery token and the code that validates a forgery token. Not using a token for your cookies makes you vulnerable against CSRF. The authentication on our website would store a cookie which the attacker can now use to his advantage. Of course, the user would still have to be lured to the malicious site first. 
 
+(Verify with tool (SAST))
 
 ## HTTPS Vulnerability
 
@@ -118,4 +123,4 @@ Geprobeerd maar geen cookies/token (uitbreiden tekst)
 ## SQLi
 
 NOG TE DOEN
-
+(moet niet tenzij XSS niet werkt)
