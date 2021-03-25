@@ -111,7 +111,8 @@ OWASP ZAP is a tool outside of Visual Studio, it was an easy to install and setu
 
 ### NoScript Extension
 
-Noscript is a browser extension 
+Noscript is an extension for chrome and Mozilla-based browsers, whenever a website tries to inject HTML or JavaScript code inside a different site, NoScript filters the malicious request and neutralizing its dangerous payload. 
+
 
 ### JSInjector Extension
 
@@ -182,6 +183,8 @@ The first thing we’ve tried to do was entering [script/html tags](https://gith
         }
   ```
 
+We also used a few tools to test on any XSS vulnerabilities. One of those tools was OWASP ZAP. This tool tried to break our site. It eventually ended up deleting all the data. The second tool we used is ‘Inject javascript’ extension. This extension allows us to inject scripts into the target URL (our webapp) but also this time nothing happened. We concluded from the several test we ran, that our webapp is XSS-proof. Unfortunately we could not introduce any vulnerabilities regarding this subject.   
+
 
 ## SQLi
 
@@ -202,9 +205,5 @@ We fixed this error by adding the “ASPNETCORE_ENVIRONMENT” and set the value
 Overall, we find this project a very good way of learning. We think our junior students should also get a similar project next year. There are many upsides but also a few downsides to this project. I will discuss these now. 
 The biggest upside of this project is that we had the chance to explore security options with a very hands-on approach. Because of this we learned a lot of things about our curriculum and very fast. It is also important to note that we liked this way of learning which made everything a little easier. There is a downside to this, this way of learning is very time-consuming. In a matter of 6 weeks we have daily classes, weekly assignments, two projects and to top it off we have an exam at the end of this period. The timing of this project was a little awkward. 
 Another upside is that we were quite free to do as we like. We assume that it is one of the things that we, IT-students, really enjoy. We really appreciate the freedom that we had within this project.  
-We also have a downside to not for this project, we had to build our own webstore. In this case it is very hard to create a website in a language that you do not know and then must find vulnerabilities in this language. It made this project much more complex than it had to be. A suggestion we had was that we would get a website and we would have to analyze (more) vulnerabilities on that website.  
-
-(XSS process uitleggen/ SQLi (nog ni echt iets gedaan)) 
-(WRITE PROBLEMS/PROGRESS/CHOICE OF TOOL/... HERE)
-
-OWASP ZAP TOOL DELETED EVERYTHING
+We also have a downside to not for this project, we had to build our own webstore. In this case it is very hard to create a website in a language that you do not know and then must find vulnerabilities in this language. It made this project much more complex than it had to be. A suggestion we had was that we would get a website and we would have to analyze (more) vulnerabilities on that website. Lastly, we had different assignments for every group. This is not necessarily bad, but the assignments all covered different subjects. This means we are being graded for different parts and goes against the principle of equal education for all students.  
+We hope that this feedback can be taken constructively and offered some additional insights for you. We would like to thank you for your classes, without a brown-nose we can all say that we enjoyed your curriculum. 
