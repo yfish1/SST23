@@ -193,11 +193,19 @@ The web application was built with a good framework so we didn’t think that we
 
 # Journey
 
-We first started with following a tutorial to setup the project. The setup went well and started up (locally) without problems. However, there were still some bugs, for example you couldn’t give a decimal number in the price column, we fixed this bug by alternating the regex. After fixing some minor bugs, we tried to host our project. This part took a lot of time of our hand. We tried to use AWS since this method was introduced in one of our classes, but we quickly realized that it was way too complicated, so we went further with Netlify but this was a fail too. After those 2 methods we chose for azure, a quite simple method, we thought. First we had to setup the azure account, to do this we had to verify our account as student. When we succeeded, we had to buy the license for azure with the 100 dollars we were given. After this we made a resource group and published our project. Unfortunately it failed, we got an [error](https://github.com/yfish1/SST23/blob/main/errorDevelopment.png).  
+We first started with following a tutorial to setup the project. The setup went well and started up (locally) without problems. However, there were still some bugs, for example you couldn’t give a decimal number in the price column, we fixed this bug by alternating the regex. After fixing some minor bugs, we tried to host our project. This part took a lot of time of our hand. We tried to use AWS since this method was introduced in one of our classes, but we quickly realized that it was way too complicated, so we went further with Netlify but this was a fail too. After those 2 methods we chose for azure, a quite simple method, we thought. First we had to setup the azure account, to do this we had to verify our account as student. When we succeeded, we had to buy the license for azure with the 100 dollars we were given. After this we made a resource group and published our project. Unfortunately it failed, we got an error.  
+
+![alt_text](https://github.com/yfish1/SST23/blob/main/errorDevelopment.png)
 
 We fixed this error by adding the “ASPNETCORE_ENVIRONMENT” and set the value to it to “Development”. Yet we still got errors after it, the second error was that the connectionString was wrong and we didn’t migrate it to the database. After we managed to clear the error by adding data manually to the local storage, we stumbled upon another error. This one was about the database, we didn’t connect with the azure database although we made it. After connecting the azure database everything worked. So we started to test if and how the project protects against the attacks named above. CSRF went fluently together with HTTPS, however we struggled with XSS and SQLi.  
 
- 
+
+# Feedback
+
+Overall, we find this project a very good way of learning. We think our junior students should also get a similar project next year. There are many upsides but also a few downsides to this project. I will discuss these now. 
+The biggest upside of this project is that we had the chance to explore security options with a very hands-on approach. Because of this we learned a lot of things about our curriculum and very fast. It is also important to note that we liked this way of learning which made everything a little easier. There is a downside to this, this way of learning is very time-consuming. In a matter of 6 weeks we have daily classes, weekly assignments, two projects and to top it off we have an exam at the end of this period. The timing of this project was a little awkward. 
+Another upside is that we were quite free to do as we like. We assume that it is one of the things that we, IT-students, really enjoy. We really appreciate the freedom that we had within this project.  
+We also have a downside to not for this project, we had to build our own webstore. In this case it is very hard to create a website in a language that you do not know and then must find vulnerabilities in this language. It made this project much more complex than it had to be. A suggestion we had was that we would get a website and we would have to analyze (more) vulnerabilities on that website.  
 
 (XSS process uitleggen/ SQLi (nog ni echt iets gedaan)) 
 (WRITE PROBLEMS/PROGRESS/CHOICE OF TOOL/... HERE)
