@@ -101,14 +101,28 @@ You can **defend against SQLi** with these **4** methods:
 
 # Break it
 
-After our evaluation, we introduced two vulnerabilities (CSRF and XSS). With a tool, we can verify that it finds the vulnerabilities that we have introduced.
+After our evaluation, we introduced vulnerabilities to our project. With a few tools, we were able to verify that it finds the vulnerabilities that we have introduced.
 
 
-## Tool Security Code Scan
+## Tools used
 
-Security Code Scan is an open source tool. It detects various security vulnerability patterns. There  are **3** methods to get this tool.
+### Security Code Scan
 
-More info about these methods and tool on [the site](https://security-code-scan.github.io/#Installation)
+Security Code Scan is an open source tool. It detects various security vulnerability patterns. We got the tool by downloading it via the extension manager in Visual Studio. The main reason for the usage of this tool is because it was recently updated, it's an active directory and works good.
+
+More info about the tool on [the site](https://security-code-scan.github.io/#Installation)
+
+
+### OWASP ZAP
+
+OWASP ZAP is a tool outside of Visual Studio, it was an easy to install and setup with their awesome guide. The tool itself is somehow 'scary', when u put the link of our site, the tool is going to try and break the site. The user interface is easy to understand even with no IT-knowledge.
+
+
+### NoScript Extension
+
+Noscript is a browser extension 
+
+### JSInjectior Extension
 
 
 ## CSRF Vulnerability
