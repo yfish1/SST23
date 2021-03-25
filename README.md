@@ -121,6 +121,8 @@ To verify that our project is vulerable to CSRF we used our tool. Once we publis
 
 ![alt text](https://github.com/yfish1/SST23/blob/main/CSRFValidate.PNG)
 
+However if you replace  ```[ValidateAntiForgeryToken]``` with ```[IgnoreAntiforgeryToken]```  the tool returns no warning.
+
 
 ## HTTPS Vulnerability
 
