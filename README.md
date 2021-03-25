@@ -56,9 +56,7 @@ The following is a step-by-step description of a stored XSS attack:
    * The attacker's script is sent to the victim's browser; 
    * The attacker's script is executed in the victim's browser. 
 
- 
-
-Source : Attack scenario from “https://apwt.gitbook.io/software-security/injection-attacks/000introxss” 
+[source](https://apwt.gitbook.io/software-security/injection-attacks/000introxss)
 
  
 ## CSRF 
@@ -108,7 +106,7 @@ After our evaluation, we introduced two vulnerabilities (CSRF and XSS). With the
 
 Security Code Scan is an open source tool. It detects various security vulnerability patterns. There  are **3** methods to get this tool.
 
-More info about this methods and tool on [the site]https://security-code-scan.github.io/#Installation
+More info about this methods and tool on [the site](https://security-code-scan.github.io/#Installation)
 
 
 ## CSRF Vulnerability
