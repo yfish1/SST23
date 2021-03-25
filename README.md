@@ -122,7 +122,17 @@ OWASP ZAP is a tool outside of Visual Studio, it was an easy to install and setu
 
 Noscript is a browser extension 
 
-### JSInjectior Extension
+### JSInjector Extension
+
+Inject javascript is a chrome extension to injecti Java Script into a target URL every time that page loads.
+
+You can inject your favourite script to extend the page functionality.
+
+**Features:**
+   * Add urls with or without regular expressions
+   * Keep a list of your urls and edit your js code inline
+   * You can turn on/off the js code when you wish
+   * Search trough your URLs
 
 
 ## CSRF Vulnerability
