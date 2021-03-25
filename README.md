@@ -181,7 +181,7 @@ The first thing we’ve tried to do was entering script/html tags in the input f
         public string Rating { get; set; }
         }
   ```
-![alt text](https://github.com/yfish1/SST23/blob/main/FrontPage.PNG)
+![alt text](https://github.com/yfish1/SST23/blob/main/FrontPage1.PNG)
 
 
 ## SQLi
