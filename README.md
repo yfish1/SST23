@@ -185,8 +185,6 @@ The first thing we’ve tried to do was entering [script/html tags](https://gith
 
 ## SQLi
 
-NOG TE DOEN
-
 The web application was built with a good framework so we didn’t think that we could introduce a SQL vulnerability. After manually testing and editing our source code for a few hours we accepted that it was not something that is open to introducing a vulnerability. Afterwards we tested our website for SQL injections on a third party tool. We were unsuccessful in introducing a vulnerability. 
 
 
