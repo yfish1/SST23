@@ -119,6 +119,7 @@ We took the ```[ValidateAntiForgeryToken]``` out to make the webapp vulnerable t
 
 To verify that our project is vulerable to CSRF we used our tool. Once we published the project, the tool immediately warns about potential vulnerabilities, as seen in the picture below.
 
+![alt text](https://github.com/yfish1/SST23/blob/main/CSRFValidate.PNG)
 
 
 ## HTTPS Vulnerability
